@@ -26,8 +26,8 @@ travis-ci   = { repository = "inotify-rs/inotify" }
 
 
 [features]
-default = ["stream"]
-stream = ["futures-core", "mio", "tokio"]
+default = ["stream-tokio"]
+stream-tokio = ["futures-core", "mio", "tokio"]
 
 
 [dependencies]
@@ -44,8 +44,8 @@ futures-util = "0.3.1"
 tokio        = { version = "0.2.1", features = ["macros", "rt-core"] }
 
 [[example]]
-name              = "stream"
-required-features = ["stream"]
+name              = "stream-tokio"
+required-features = ["stream-tokio"]
 
 [[example]]
 name = "watch"

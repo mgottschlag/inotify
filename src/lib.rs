@@ -79,9 +79,8 @@ mod inotify;
 mod util;
 mod watches;
 
-#[cfg(feature = "stream")]
-mod stream;
-
+#[cfg(feature = "tokio")]
+mod tokio;
 
 pub use crate::events::{
     Event,

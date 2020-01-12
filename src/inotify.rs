@@ -32,9 +32,9 @@ use crate::watches::{
 };
 
 
-#[cfg(feature = "stream")]
-use crate::stream::EventStream;
 
+#[cfg(feature = "stream-tokio")]
+use crate::tokio;
 
 /// Idiomatic Rust wrapper around Linux's inotify API
 ///
